@@ -1,3 +1,19 @@
+repeat wait()
+until game:FindFirstChild("CoreGui")
+        and game.Players.LocalPlayer
+
+repeat wait(.25)
+until game:IsLoaded()
+        and game.Players.LocalPlayer.Character
+		
+repeat wait()
+until plr:FindFirstChild("Backpack")
+        and plr:FindFirstChild("DataLoaded")
+		
+repeat wait(1) until game:GetService('Players').LocalPlayer.Character
+repeat wait(1) until game:GetService('Players').LocalPlayer.Character:FindFirstChild('HumanoidRootPart')
+repeat wait(1) until game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild('Main')
+
 local KOGPlayers = game:GetService("Players")
 local KOGLocalPlayer = KOGPlayers.LocalPlayer
 local RunService = game:GetService("RunService")
