@@ -29,5 +29,6 @@ pcall(function()
             end
         end
         lastPosition = currentPosition
+		wait(1)
 	end
 end)
