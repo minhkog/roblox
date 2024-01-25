@@ -20,6 +20,7 @@ local function checkPlayerAFK()
     RunService.Heartbeat:Connect(function(deltaTime)
         local currentPosition = humanoidRootPart.Position
         if (currentPosition - lastPosition).Magnitude > afkThreshold then
+				LocalPlayer:Kick("reset nha")
             afkTime = 0 
         else
             afkTime = afkTime + deltaTime
