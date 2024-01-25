@@ -5,25 +5,25 @@ local KOGcharacter = KOGLocalPlayer.Character
 local afkthreshold = 1
 local afktimethreshold = 20 
 
-
 pcall(function()
-    if not KOGcharacter or not KOGcharacter:findfirstchild("humanoidrootpart") then
-		KOGLocalPlayer:kick("khong tim thay character")
+
+    if not KOGcharacter or not KOGcharacter:FindFirstChild("HumanoidRootPart") then
+    	KOGLocalPlayer:kick("khong tim thay character")
         return
     end
-	local humanoidrootpart = KOGcharacter:waitforchild("humanoidrootpart")
-    local lastposition = humanoidrootpart.position
+    
+    local humanoidrootpart = KOGcharacter:WaitForChild("HumanoidRootPart")
+    local lastposition = humanoidrootpart.Position
     local afktime = 0
-	KOGLocalPlayer:kick("tren dau while")
+	
 	while true do
-		local currentposition = humanoidrootpart.position
-		if (currentposition - lastposition).magnitude > afkthreshold then
+		local currentposition = humanoidrootpart.Position
+		if (currentposition - lastposition).Magnitude > afkthreshold then
             afktime = 0 
         else
-            afktime = afktime + deltatime
+            afktime = afktime + 1
             if afktime >= afktimethreshold then
-                warn("local character afk")
-                KOGLocalPlayer:kick("you were kicked for being afk. muahahahasdjkhshdsd")
+                KOGLocalPlayer:kick("Kick because AFK! kaka")
             end
         end
         lastposition = currentposition
