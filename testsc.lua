@@ -1,49 +1,44 @@
-repeat wait()
-until game:FindFirstChild("CoreGui")
-        and game.Players.LocalPlayer
-
-repeat wait(.25)
-until game:IsLoaded()
-        and game.Players.LocalPlayer.Character
-		
-repeat wait()
-until plr:FindFirstChild("Backpack")
-        and plr:FindFirstChild("DataLoaded")
-		
-repeat wait(1) until game:GetService('Players').LocalPlayer.Character
-repeat wait(1) until game:GetService('Players').LocalPlayer.Character:FindFirstChild('HumanoidRootPart')
-repeat wait(1) until game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild('Main')
-
 local KOGPlayers = game:GetService("Players")
 local KOGLocalPlayer = KOGPlayers.LocalPlayer
 local RunService = game:GetService("RunService")
 local KOGcharacter = KOGLocalPlayer.Character
 local afkthreshold = 1
-local afktimethreshold = 5
+local afktimethreshold = 20 
 
 pcall(function()
 
-    if not KOGcharacter or not KOGcharacter:FindFirstChild("HumanoidRootPart") then
-    	KOGLocalPlayer:kick("khong tim thay character")
-        return
-    end
+    local success2, result2 = pcall(function()
+        if not KOGcharacter or not KOGcharacter:FindFirstChild("HumanoidRootPart") then
+        	KOGLocalPlayer:kick("khong tim thay character")
+            return
+        end
+        
+        local humanoidrootpart = KOGcharacter:WaitForChild("HumanoidRootPart")
+        local lastposition = humanoidrootpart.Position
+        local afktime = 0    
+    end)
     
-    local humanoidrootpart = KOGcharacter:WaitForChild("HumanoidRootPart")
-    local lastposition = humanoidrootpart.Position
-    local afktime = 0
+    if not success2 then
+        game.Players.LocalPlayer:Kick(result2)
+    end
 	
 	while true do
-		local currentposition = humanoidrootpart.Position
-		if (currentposition - lastposition).Magnitude > afkthreshold then
-            afktime = 0 
-        else
-            afktime = afktime + 1
-            if afktime >= afktimethreshold then
-                KOGLocalPlayer:kick("Kick because AFK! kaka")
+		local success, result = pcall(function()
+		    local currentposition = humanoidrootpart.Position
+    		if (currentposition - lastposition).Magnitude > afkthreshold then
+                afktime = 0 
+            else
+                afktime = afktime + 1
+                if afktime >= afktimethreshold then
+                    KOGLocalPlayer:kick("Kick because AFK! kaka")
+                end
             end
+            lastposition = currentposition
+    		wait(1)
+    		KOGLocalPlayer:kick("Kick because AFK! kaka")    
+		end)
+        if not success then
+            game.Players.LocalPlayer:Kick(result)
         end
-        lastposition = currentposition
-		wait(1)
-			KOGLocalPlayer:kick("dang check roi nha")
 	end
 end)
