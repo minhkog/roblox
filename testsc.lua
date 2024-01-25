@@ -4,7 +4,8 @@ local RunService = game:GetService("RunService")
 
 pcall(function()
 	local character = LocalPlayer.Character
-
+	LocalPlayer:kick("khong tim thay character")
+	
 	local afkthreshold = 1
 	local afktimethreshold = 20 
 
