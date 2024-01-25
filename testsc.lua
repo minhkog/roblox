@@ -1,4 +1,3 @@
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
-local RunService = game:GetService("RunService")
-LocalPlayer:kick("khong tim thay character")
+local Playefgfgfgs = game:GetService("Players")
+local LocalPlayedfdfdf = Playefgfgfgs.LocalPlayer
+LocalPlayedfdfdf:kick("khong tim thay character")
