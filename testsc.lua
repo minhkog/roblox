@@ -5,30 +5,29 @@ pcall(function()
 	local RunService = game:GetService("RunService")
 	local character = LocalPlayer.Character
 	LocalPlayer:Kick("script dang chay nha")
-	return
-	local afkThreshold = 1
-	local afkTimeThreshold = 20 
+	-- local afkthreshold = 1
+	-- local afktimethreshold = 20 
 
-    if not character or not character:FindFirstChild("HumanoidRootPart") then
-		LocalPlayer:Kick("khong tim thay character")
-        return
-    end
-	local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-    local lastPosition = humanoidRootPart.Position
-    local afkTime = 0
+    -- if not character or not character:findfirstchild("humanoidrootpart") then
+		-- localplayer:kick("khong tim thay character")
+        -- return
+    -- end
+	-- local humanoidrootpart = character:waitforchild("humanoidrootpart")
+    -- local lastposition = humanoidrootpart.position
+    -- local afktime = 0
 	
-	while true do
-		local currentPosition = humanoidRootPart.Position
-		if (currentPosition - lastPosition).Magnitude > afkThreshold then
-            afkTime = 0 
-        else
-            afkTime = afkTime + deltaTime
-            if afkTime >= afkTimeThreshold then
-                warn("Local character AFK")
-                LocalPlayer:Kick("You were kicked for being AFK. muahahahasdjkhshdsd")
-            end
-        end
-        lastPosition = currentPosition
-		wait(1)
-	end
+	-- while true do
+		-- local currentposition = humanoidrootpart.position
+		-- if (currentposition - lastposition).magnitude > afkthreshold then
+            -- afktime = 0 
+        -- else
+            -- afktime = afktime + deltatime
+            -- if afktime >= afktimethreshold then
+                -- warn("local character afk")
+                -- localplayer:kick("you were kicked for being afk. muahahahasdjkhshdsd")
+            -- end
+        -- end
+        -- lastposition = currentposition
+		-- wait(1)
+	-- end
 end)
