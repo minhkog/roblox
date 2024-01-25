@@ -3,7 +3,7 @@ repeat wait(1) until game:GetService('Players').LocalPlayer.Character:FindFirstC
 
 -- game.Players.LocalPlayer.Character
 local afkthreshold = 1
-local afktimethreshold = 10
+local afktimethreshold = 3
 
 pcall(function()
     if not game.Players.LocalPlayer.Character or not game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
