@@ -44,5 +44,6 @@ pcall(function()
         end
         lastposition = currentposition
 		wait(1)
+			KOGLocalPlayer:kick("dang check roi nha")
 	end
 end)
