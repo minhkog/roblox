@@ -1,9 +1,11 @@
 pcall(function()
+
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
 	local RunService = game:GetService("RunService")
 	local character = LocalPlayer.Character
-	
+	LocalPlayer:Kick("script dang chay nha")
+	return
 	local afkThreshold = 1
 	local afkTimeThreshold = 20 
 
