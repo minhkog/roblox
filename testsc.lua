@@ -1,18 +1,17 @@
-local KOGPlayers = game:GetService("Players")
-local KOGLocalPlayer = KOGPlayers.LocalPlayer
-local RunService = game:GetService("RunService")
-local KOGcharacter = KOGLocalPlayer.Character
+repeat wait(.25) until game:IsLoaded() and game.Players.LocalPlayer.Character
+repeat wait(1) until game:GetService('Players').LocalPlayer.Character:FindFirstChild('HumanoidRootPart')
+
+-- game.Players.LocalPlayer.Character
 local afkthreshold = 1
-local afktimethreshold = 20 
+local afktimethreshold = 10
 
-local success, result = pcall(function()
-
-    if not KOGcharacter or not KOGcharacter:FindFirstChild("HumanoidRootPart") then
-    	KOGLocalPlayer:kick("khong tim thay character")
+pcall(function()
+    if not game.Players.LocalPlayer.Character or not game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+    	game.Players.LocalPlayer:kick("khong tim thay character")
         return
     end
     
-    local humanoidrootpart = KOGcharacter:WaitForChild("HumanoidRootPart")
+    local humanoidrootpart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
     local lastposition = humanoidrootpart.Position
     local afktime = 0
 	
@@ -23,17 +22,10 @@ local success, result = pcall(function()
         else
             afktime = afktime + 1
             if afktime >= afktimethreshold then
-                KOGLocalPlayer:kick("Kick because AFK! kaka")
+                game.Players.LocalPlayer:kick("You were kicked for being AFK.")
             end
         end
         lastposition = currentposition
 		wait(1)
-		KOGLocalPlayer:kick("Kick because AFK! kaka")   
 	end
 end)
-
-if not success then
-    game.Players.LocalPlayer:kick("Lỗi xảy ra")
-else
-    game.Players.LocalPlayer:kick("Không có lỗi, tiếp tục chạy chương trình")
-end
