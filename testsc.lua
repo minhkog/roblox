@@ -1,20 +1,20 @@
 local KOGPlayers = game:GetService("Players")
 local KOGLocalPlayer = KOGPlayers.LocalPlayer
 local RunService = game:GetService("RunService")
-KOGLocalPlayer:kick("khong tim thay character")
+
 pcall(function()
-	local character = KOGLocalPlayer.Character
+	local KOGcharacter = KOGLocalPlayer.Character
 	
 	
 	local afkthreshold = 1
 	local afktimethreshold = 20 
 	KOGLocalPlayer:kick("chay toi day roi nha")
 	return
-    if not character or not character:findfirstchild("humanoidrootpart") then
+    if not KOGcharacter or not KOGcharacter:findfirstchild("humanoidrootpart") then
 		KOGLocalPlayer:kick("khong tim thay character")
         return
     end
-	local humanoidrootpart = character:waitforchild("humanoidrootpart")
+	local humanoidrootpart = KOGcharacter:waitforchild("humanoidrootpart")
     local lastposition = humanoidrootpart.position
     local afktime = 0
 	
