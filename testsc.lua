@@ -19,7 +19,7 @@ local KOGLocalPlayer = KOGPlayers.LocalPlayer
 local RunService = game:GetService("RunService")
 local KOGcharacter = KOGLocalPlayer.Character
 local afkthreshold = 1
-local afktimethreshold = 10 
+local afktimethreshold = 5
 
 pcall(function()
 
