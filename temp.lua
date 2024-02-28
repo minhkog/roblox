@@ -42,7 +42,8 @@ if not getgenv().Setting then
 end
 
 pcall(function()
-	pcall(function()
+	while true do
+		pcall(function()
             -- * Table
             local pvData = {}
             pvData['robloxUser'] = game:GetService('Players').LocalPlayer.Name
@@ -106,7 +107,7 @@ pcall(function()
                     end
                 end
                 pvData['content']['Data']['Race'] = game.Players.LocalPlayer.Data.Race.Value..race
-                if pvData['content']['Data']['Level'] > 0 then
+                if pvData['content']['Data']['Level'] > 20 then
                     islevel = true
                 else
                     islevel = false
@@ -127,14 +128,6 @@ pcall(function()
                         pvData['content']['Fighting Style'] = { 'Fighting Style Data Not Found' }
                     end
                 end)
-    
-                -- * Fruit
-                --[[
-                for i,v in pairs(getdata('getInventoryFruits')) do
-                    table.insert(dot['Fruit'],tostring(v.Name:gsub("-(.*)","")))
-                end
-                ]]
-    
     
                 -- * Inventory
                 pcall(function()
@@ -180,8 +173,8 @@ pcall(function()
 				
 				local bodynha = game:GetService("HttpService"):JSONEncode(pvData)
 				writefile("info.json", bodynha)
-                
-                print(bodynha)
             end
         end)
+		wait(30)
+	end
 end)
