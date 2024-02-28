@@ -106,7 +106,7 @@ pcall(function()
                     end
                 end
                 pvData['content']['Data']['Race'] = game.Players.LocalPlayer.Data.Race.Value..race
-                if pvData['content']['Data']['Level'] > 20 then
+                if pvData['content']['Data']['Level'] > 0 then
                     islevel = true
                 else
                     islevel = false
