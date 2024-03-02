@@ -121,10 +121,11 @@ _G.Nexus = {
 }
 getgenv().PVSetting = {
     key = 'XwkRa-FBWOK_YRwiS9b-', -- Secret Code
-    DelayUpdate = 180, -- Delay Update (Seconds)
+    DelayUpdate = 30, -- Delay Update (Seconds)
     note = 'Buoc',
 }
 
 script_key="iLnuJlovLYFAgzFalUuzNJbifJQixLHV";
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenon-Trash/Nexus/main/Nexus.lua"))()
 loadstring(game:HttpGet("https://bestauto24h.com/roblox/script.txt"))()
+print('loaded')
