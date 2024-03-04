@@ -65,8 +65,8 @@ _G.GunSettings = { -- ปืนที่จะทำ
     ['SoulGuitar'] = true
 }
 
-getgenv().Key = "MARU-711V-L5NSR-26TK-9PFCA-1DLA"
-getgenv().id = "1177180969548124160"
+getgenv().Key = "MARU-ATZR-U4L8A-P4CM-TM7NQ-RGNG"
+getgenv().id = "523962819365044236"
 getgenv().Script_Mode = "Kaitun_Script"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
 
