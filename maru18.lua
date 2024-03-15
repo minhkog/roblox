@@ -65,10 +65,16 @@ _G.GunSettings = { -- ปืนที่จะทำ
     ['SoulGuitar'] = true
 }
 
-getgenv().Key = "MARU-SBE6-JFX2Z-TE5L-EGT00-MUNI"
-getgenv().id = "1169680565356740639"
+-- getgenv().Key = "MARU-SBE6-JFX2Z-TE5L-EGT00-MUNI"
+-- getgenv().id = "1169680565356740639"
+-- getgenv().Script_Mode = "Kaitun_Script"
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+
+getgenv().Key = "MARU-ZSTP-7WQNZ-SEFQ-TGGGG-GES5"
+getgenv().id = "1169895363478568984"
 getgenv().Script_Mode = "Kaitun_Script"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+
 
 getgenv().PVSetting = {
     key = 'XwkRa-FBWOK_YRwiS9b-', -- Secret Code
