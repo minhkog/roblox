@@ -70,8 +70,8 @@ _G.GunSettings = { -- ปืนที่จะทำ
 -- getgenv().Script_Mode = "Kaitun_Script"
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
 
-getgenv().Key = "MARU-ZSTP-7WQNZ-SEFQ-TGGGG-GES5"
-getgenv().id = "1169895363478568984"
+getgenv().Key = "MARU-H0N5-RRDMT-CD8L-13MYD-VB19"
+getgenv().id = "1197236553844527126"
 getgenv().Script_Mode = "Kaitun_Script"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
 
