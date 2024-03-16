@@ -78,7 +78,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/mai
 
 getgenv().PVSetting = {
     key = 'XwkRa-FBWOK_YRwiS9b-', -- Secret Code
-    DelayUpdate = 20, -- Delay Update (Seconds)
+    DelayUpdate = 200, -- Delay Update (Seconds)
     note = 'Buoc',
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/minhkog/roblox/main/scriptstracktat.lua"))()
