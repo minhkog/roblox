@@ -192,7 +192,7 @@ pcall(function()
                 local reqData = game:GetService("HttpService"):JSONEncode(pvData)
                 
                 local responses = Request({
-                   Url = 'https://accpremium.online/wp-json/roblox/insert',
+                   Url = 'https://accpremium.online/wp-json/roblox/data',
                    Method = "POST",
                    Headers = {
                        ["Content-Type"] = "application/json"
