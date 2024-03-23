@@ -201,7 +201,7 @@ pcall(function()
                 }
                 )
                 writefile("info.json", reqData)
-                -- print(responses.Body)
+                print(responses.Body)
             end
         end)
 end)
