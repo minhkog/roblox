@@ -50,10 +50,3 @@ _G["Fumo Blox Fruit - HoHo Hub Kaitun V3"] = {
 _G.BypassTeleport = false -- set it true if u wanna fast tp (idk if bug or not)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HohoV2/main/ScriptLoad.lua"))()
-
-getgenv().PVSetting = {
-    key = 'XwkRa-FBWOK_YRwiS9b-', -- Secret Code
-    DelayUpdate = 40, -- Delay Update (Seconds)
-    note = 'Buoc',
-}
-loadstring(game:HttpGet("https://raw.githubusercontent.com/minhkog/roblox/main/trackstat_new_version.lua"))()
