@@ -1,6 +1,6 @@
 _G.MainSettings = {
         ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
-        ['FPSBOOST'] = false, -- ภาพกาก
+        ['FPSBOOST'] = true, -- ภาพกาก
         ["FPSLOCKAMOUNT"] = 20, -- จำนวน FPS
         ['WhiteScreen'] = true, -- จอขาว
         ['CloseUI'] = false, -- ปิด Ui
@@ -70,9 +70,9 @@ getgenv().id = "523962819365044236"
 getgenv().Script_Mode = "Kaitun_Script"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
 
---getgenv().PVSetting = {
---    key = 'XwkRa-FBWOK_YRwiS9b-', -- Secret Code
---    DelayUpdate = 20, -- Delay Update (Seconds)
---    note = 'Buoc',
---}
---loadstring(game:HttpGet("https://raw.githubusercontent.com/minhkog/roblox/main/trackstat_new_version.lua"))()
+getgenv().PVSetting = {
+    key = 'XwkRa-FBWOK_YRwiS9b-', -- Secret Code
+    DelayUpdate = 20, -- Delay Update (Seconds)
+    note = 'Buoc',
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/minhkog/roblox/main/trackstat_new_version.lua"))()
