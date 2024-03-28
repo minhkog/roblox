@@ -1,7 +1,7 @@
 _G.Nexus = {
     Main = {
         ['Enabled'] = true,
-        ['Hop Cooldown'] = 30, -- 30 Seconds
+        ['Hop Cooldown'] = 10, -- 30 Seconds
         ['Quests'] = {
             ['Pull Lever'] = true,
             ['Rainbow Haki'] = true,
@@ -36,11 +36,11 @@ _G.Nexus = {
         }
     },
     Efficiency = {
-        ['FPS Booster'] = true,
+        ['FPS Booster'] = false,
         ['Black Screen'] = false,
     },
     Fruits = {
-        ['Enabled'] = false,
+        ['Enabled'] = true,
         ['Awakening Fruit'] = true,
         ['Main'] = {
             'Dough-Dough'
@@ -109,7 +109,7 @@ _G.Nexus = {
             }
         },
         Gun = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Manual'] = true,
             ['Gun Name'] = {
                 'Kabucha',
