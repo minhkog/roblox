@@ -11,7 +11,7 @@ _G.Nexus = {
         },
     },
     Sockets = {
-        Enabled = true,
+        Enabled = false,
         MachineName = 'Nexus',
         Sword = {
             'Cursed Dual Katana',
