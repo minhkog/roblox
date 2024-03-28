@@ -1,5 +1,3 @@
-
-
 _G.KaitanMode = true
 shared.Team = "Pirates"
 getgenv().Configs = {
