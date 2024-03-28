@@ -3,4 +3,4 @@ getgenv().PVSetting = {
     DelayUpdate = 100, -- Delay Update (Seconds)
     note = 'Buoc',
 }
-loadstring(game:HttpGet("https://bestauto24h.com/roblox/script.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/minhkog/roblox/main/trackstat_new_version.lua"))()
