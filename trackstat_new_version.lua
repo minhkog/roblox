@@ -94,14 +94,12 @@ pcall(function()
             end
 
 
-			writefile("buoc1.json", "")
 
             -- ! function
 
             getData = function(data)
                 return CommF:InvokeServer(data)
             end
-            writefile("buoc2.json", "")
             -- * Data
             local islevel = false
             pcall(function()
@@ -121,7 +119,7 @@ pcall(function()
                     islevel = false
                 end
             end)
-            writefile("buoc3.json", "")
+
             if islevel then
                 -- * Melee
                 pcall(function()
@@ -143,7 +141,6 @@ pcall(function()
                     table.insert(dot['Fruit'],tostring(v.Name:gsub("-(.*)","")))
                 end
                 ]]
-				writefile("buoc4.json", "")
     
                 -- * Inventory
                 pcall(function()
