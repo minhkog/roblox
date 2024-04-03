@@ -70,9 +70,9 @@ getgenv().id = "1173778048798171196"
 getgenv().Script_Mode = "Kaitun_Script"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
 
-getgenv().PVSetting = {
-   key = 'XwkRa-FBWOK_YRwiS9b-', -- Secret Code
-   DelayUpdate = 20, -- Delay Update (Seconds)
-   note = 'Buoc',
-}
-loadstring(game:HttpGet("https://raw.githubusercontent.com/minhkog/roblox/main/trackstat_new_version.lua"))()
+-- getgenv().PVSetting = {
+--    key = 'XwkRa-FBWOK_YRwiS9b-', -- Secret Code
+--   DelayUpdate = 20, -- Delay Update (Seconds)
+--    note = 'Buoc',
+-- }
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/minhkog/roblox/main/trackstat_new_version.lua"))()
