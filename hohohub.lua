@@ -14,7 +14,7 @@ _G["Fumo Blox Fruit - HoHo Hub Kaitun V3"] = {
         NoStun = true, -- true/false make u dont get stuned when farming
     },
     ListFruitTake = {
-        "Ice-Ice","Light-Light","Spider-Spider",'Magma-Magma','Flame-Flame','Rumble-Rumble','Dark-Dark','Quake-Quake','Buddha-Buddha',
+        "Mammoth-Mammoth","Kitsune-Kitsune","Leopard-Leopard","Dragon-Dragon","T-Rex-T-Rex"
         -- put fruit you want like above, recommend fruit can awake
         -- fruit list: 'Sand-Sand','Smoke-Smoke','Ice-Ice','Kilo-Kilo','Diamond-Diamond','Light-Light','Shadow-Shadow','Portal-Portal','Spider-Spider','Gravity-Gravity','Spin-Spin','Revive-Revive','Bird-Bird: Phoenix','Rubber-Rubber','Spring-Spring','Blizzard-Blizzard','Dough-Dough','Bomb-Bomb','Venom-Venom','Bird-Bird: Falcon','Spirit-Spirit','Love-Love','Leopard-Leopard','Dragon-Dragon','Spike-Spike','Magma-Magma','Control-Control','Flame-Flame','Rumble-Rumble','Dark-Dark','Chop-Chop','Quake-Quake','Buddha-Buddha','Barrier-Barrier',"Rocket-Rocket","Sound-Sound","Pain-Pain","Mammoth-Mammoth","Kitsune-Kitsune","T-Rex-T-Rex"
     },
