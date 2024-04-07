@@ -4,7 +4,7 @@ _G["Fumo Blox Fruit - HoHo Hub Kaitun V3"] = {
     
     BlackScreen = true, -- less lag
     FastMode = true, -- true/false less lag
-    AutoRejoinGame = 1800, -- time in second, rejoin to bypass anticheat
+    AutoRejoinGame = 2500, -- time in second, rejoin to bypass anticheat
     GetFruitInWorld = true, -- true/false collect fruit
     AutoTeam = "Pirate", -- Pirate/Marine
     GetMelees = {"Superhuman", "Death Step","Sharkman Karate","Electric Claw","Dargon Talon", "Godhuman"}, -- remove if u dont wanna get what melee
@@ -28,8 +28,8 @@ _G["Fumo Blox Fruit - HoHo Hub Kaitun V3"] = {
         Ectoplasm_Items = true, -- true/false buy all ecto items
     },
     AutoItems = {
-        ["Second Sea"] = {"Kabucha"},
-        ["Third Sea"] = {"Tushita", "Yama", "Cursed Dual Katana","Soul Guitar"},
+        ["Second Sea"] = {},
+        ["Third Sea"] = {"Cursed Dual Katana","Soul Guitar", "Yama"},
         --remove rainbow haki or any thing if u dont want
     },
     Deep_Config = {
