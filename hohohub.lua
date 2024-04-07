@@ -28,8 +28,8 @@ _G["Fumo Blox Fruit - HoHo Hub Kaitun V3"] = {
         Ectoplasm_Items = true, -- true/false buy all ecto items
     },
     AutoItems = {
-        ["Second Sea"] = {"Kabucha","Rengoku","Acidum Rifle","Dark Coat"},
-        ["Third Sea"] = {"Cursed Dual Katana","Soul Guitar","Rainbow Haki","Hallow Scythe","Tushita","Yama","AutoElite","AutoRipIndra"},
+        ["Second Sea"] = {"Kabucha"},
+        ["Third Sea"] = {"Tushita", "Yama", "Cursed Dual Katana","Soul Guitar"},
         --remove rainbow haki or any thing if u dont want
     },
     Deep_Config = {
