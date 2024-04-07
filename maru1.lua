@@ -1,6 +1,6 @@
 _G.MainSettings = {
         ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
-        ['FPSBOOST'] = true, -- ภาพกาก
+        ['FPSBOOST'] = false, -- ภาพกาก
         ["FPSLOCKAMOUNT"] = 20, -- จำนวน FPS
         ['WhiteScreen'] = false, -- จอขาว
         ['CloseUI'] = true, -- ปิด Ui
@@ -12,7 +12,6 @@ _G.MainSettings = {
             ["Dough-Dough"] = true,
             ["Leopard-Leopard"] = true,
             ["Mammoth-Mammoth"] = true,
-            ["T-T"] = true,
             ["Dragon-Dragon"] = true
         }
     }
@@ -44,9 +43,9 @@ _G.Settings_Melee = { -- หมัดที่จะทำ
     ['Godhuman'] = true
 }
 _G.SwordSettings = { -- ดาบที่จะทำ
-    ['Saber'] = true,
-    ["Pole"] = true,
-    ['MidnightBlade'] = true,
+    ['Saber'] = false,
+    ["Pole"] = false,
+    ['MidnightBlade'] = false,
     ['Shisui'] = false,
     ['Saddi'] = false,
     ['Wando'] = false,
@@ -55,13 +54,13 @@ _G.SwordSettings = { -- ดาบที่จะทำ
     ['Canvander'] = false,
     ['BuddySword'] = false,
     ['TwinHooks'] = false,
-    ['HallowScryte'] = true,
+    ['HallowScryte'] = false,
     ['TrueTripleKatana'] = false,
     ['CursedDualKatana'] = true
 }
 _G.GunSettings = { -- ปืนที่จะทำ
-    ['Kabucha'] = true,
-    ['SerpentBow'] = true,
+    ['Kabucha'] = false,
+    ['SerpentBow'] = false,
     ['SoulGuitar'] = true
 }
 
