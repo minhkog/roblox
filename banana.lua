@@ -1,5 +1,5 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-getgenv().Key = "a6b128c59ed1bbd7dfe2bd47"
+getgenv().Key = "23e1705744810ebb"
 getgenv().SettingFarm ={
     ["GodHuman"] = true,
     ["Priority Get Melee Sea 3"] = false,
@@ -10,7 +10,7 @@ getgenv().SettingFarm ={
     ["SoulGuitar"] = true,
     ["Teleport To Fruit"] = true,
     ["Hop Fruit 1M Quest Third Sea"] = false,
-    ["White Screen"] = true,
+    ["White Screen"] = false,
     ["Buy Haki"] = {
         ["Enhancement"] = false,
         ["Skyjump"] = false,
