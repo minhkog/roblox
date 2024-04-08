@@ -19,7 +19,7 @@ getgenv().SettingFarm ={
     },
 
     ["Blox Fruit Sniper"] = {},
-    ["Lock Fruit"] = {"Kitsune-Kitsune", "Leopard-Leopard", "Dragon-Dragon"},
+    ["Lock Fruit"] = {},
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/KaitunTrash.lua"))()
