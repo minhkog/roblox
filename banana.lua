@@ -18,7 +18,7 @@ getgenv().SettingFarm ={
         ["Observation"] = false,
     },
 
-    ["Blox Fruit Sniper"] = {},
+    ["Blox Fruit Sniper"] = {"Dragon-Dragon","Kitsune-Kitsune","Leopard-Leopard"},
     ["Lock Fruit"] = {"Dragon-Dragon","Kitsune-Kitsune","Leopard-Leopard"},
 }
 
