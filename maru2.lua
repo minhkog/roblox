@@ -5,20 +5,19 @@ _G.MainSettings = {
         ['WhiteScreen'] = true, -- จอขาว
         ['CloseUI'] = false, -- ปิด Ui
         ["NotifycationExPRemove"] = true, -- ลบ ExP ที่เด้งตอนฆ่ามอน
-        ['AFKCheck'] = 150, -- ถ้ายืนนิ่งเกินวิที่ตั้งมันจะรีเกม
+        ['AFKCheck'] = 350, -- ถ้ายืนนิ่งเกินวิที่ตั้งมันจะรีเกม
         ["LockFragments"] = 20000, -- ล็อคเงินม่วง
         ["LockFruitsRaid"] = { -- ล็อคผลที่ไม่เอาไปลงดัน
             ["Kitsune-Kitsune"] = true,
             ["Dough-Dough"] = true,
             ["Leopard-Leopard"] = true,
-            ["Mammoth-Mammoth"] = true,
             ["T-T"] = true,
             ["Dragon-Dragon"] = true
         }
     }
 _G.Fruits_Settings = { -- ตั้งค่าผล
     ['Main_Fruits'] = {'Dough-Dough'}, -- ผลหลัก ถ้ายังไม่ใช่ค่าที่ตั้งมันจะกินจนกว่าจะใช่หรือซื้อ
-    ['Select_Fruits'] = {"Kitsune-Kitsune", "T-T", "Flame-Flame", "Ice-Ice", "Quake-Quake", "Light-Light", "Dark-Dark", "Spider-Spider", "Rumble-Rumble", "Magma-Magma", "Buddha-Buddha"} -- กินหรือซื้อตอนไม่มีผล
+    ['Select_Fruits'] = {"Kitsune-Kitsune", "Leopard-Leopard", "Dragon-Dragon", "T-T", "Flame-Flame", "Ice-Ice", "Quake-Quake", "Light-Light", "Dark-Dark", "Spider-Spider", "Rumble-Rumble", "Magma-Magma", "Buddha-Buddha"} -- กินหรือซื้อตอนไม่มีผล
 }
 _G.Races_Settings = { -- ตั้งค่าเผ่า
     ['Race'] = {
@@ -60,8 +59,8 @@ _G.SwordSettings = { -- ดาบที่จะทำ
     ['CursedDualKatana'] = true
 }
 _G.GunSettings = { -- ปืนที่จะทำ
-    ['Kabucha'] = true,
-    ['SerpentBow'] = true,
+    ['Kabucha'] = false,
+    ['SerpentBow'] = false,
     ['SoulGuitar'] = true
 }
 
