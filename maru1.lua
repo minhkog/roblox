@@ -1,6 +1,6 @@
 _G.MainSettings = {
         ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
-        ['FPSBOOST'] = false, -- ภาพกาก
+        ['FPSBOOST'] = true, -- ภาพกาก
         ["FPSLOCKAMOUNT"] = 20, -- จำนวน FPS
         ['WhiteScreen'] = false, -- จอขาว
         ['CloseUI'] = true, -- ปิด Ui
@@ -50,7 +50,6 @@ _G.SwordSettings = { -- ดาบที่จะทำ
     ['Saddi'] = false,
     ['Wando'] = false,
     ['Yama'] = true,
-        ['Tushita'] = true,
     ['Rengoku'] = false,
     ['Canvander'] = false,
     ['BuddySword'] = false,
