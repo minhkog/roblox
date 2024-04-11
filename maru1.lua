@@ -50,6 +50,7 @@ _G.SwordSettings = { -- ดาบที่จะทำ
     ['Saddi'] = false,
     ['Wando'] = false,
     ['Yama'] = true,
+        ['Tushita'] = true,
     ['Rengoku'] = false,
     ['Canvander'] = false,
     ['BuddySword'] = false,
@@ -69,9 +70,9 @@ getgenv().id = "523962819365044236"
 getgenv().Script_Mode = "Kaitun_Script"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
 
-getgenv().PVSetting = {
-    key = 'XwkRa-FBWOK_YRwiS9b-', -- Secret Code
-    DelayUpdate = 20, -- Delay Update (Seconds)
-    note = 'Buoc',
+--getgenv().PVSetting = {
+--    key = 'XwkRa-FBWOK_YRwiS9b-', -- Secret Code
+--    DelayUpdate = 20, -- Delay Update (Seconds)
+--    note = 'Buoc',
 }
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/minhkog/roblox/main/trackstat_new_version.lua"))()
