@@ -1,8 +1,8 @@
 _G.MainSettings = {
         ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
-        ['FPSBOOST'] = true, -- ภาพกาก
+        ['FPSBOOST'] = false, -- ภาพกาก
         ["FPSLOCKAMOUNT"] = 30, -- จำนวน FPS
-        ['WhiteScreen'] = false, -- จอขาว
+        ['WhiteScreen'] = true, -- จอขาว
         ['CloseUI'] = true, -- ปิด Ui
         ["NotifycationExPRemove"] = true, -- ลบ ExP ที่เด้งตอนฆ่ามอน
         ['AFKCheck'] = 100, -- ถ้ายืนนิ่งเกินวิที่ตั้งมันจะรีเกม
