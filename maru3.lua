@@ -1,6 +1,6 @@
 _G.MainSettings = {
         ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
-        ['FPSBOOST'] = false, -- ภาพกาก
+        ['FPSBOOST'] = true, -- ภาพกาก
         ["FPSLOCKAMOUNT"] = 30, -- จำนวน FPS
         ['WhiteScreen'] = true, -- จอขาว
         ['CloseUI'] = true, -- ปิด Ui
