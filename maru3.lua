@@ -72,10 +72,10 @@ spawn(function()
     screenGui.Parent = game.Players.LocalPlayer.PlayerGui
 
     -- Tính toán kích thước và vị trí của Frame
-    local left = 170
-    local top = 60
-    local width = 50
-    local height = 50
+    local left = 175
+    local top = 59
+    local width = 49
+    local height = 49
 
     local position = UDim2.new(0, left, 0, top)
     local size = UDim2.new(0, width, 0, height)
