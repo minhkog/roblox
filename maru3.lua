@@ -113,7 +113,7 @@ spawn(function()
             if colorIndex > #colors then
                 colorIndex = 1
             end
-            wait(300)
+            wait(10)
             runTween() -- Gọi lại hàm để tiếp tục chạy tween animation
         end)
     end
