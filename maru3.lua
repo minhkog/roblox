@@ -72,7 +72,7 @@ spawn(function()
     screenGui.Parent = game.Players.LocalPlayer.PlayerGui
 
     -- Tính toán kích thước và vị trí của Frame
-    local left = 175
+    local left = 160
     local top = 59
     local width = 47
     local height = 47
