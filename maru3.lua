@@ -66,7 +66,7 @@ _G.GunSettings = { -- ปืนที่จะทำ
 }
 
 spawn(function()
-    wait(50000)
+    wait(60)
     local screenGuiuiui = Instance.new("ScreenGui")
     screenGuiuiui.Name = "ColorTransition"
     screenGuiuiui.Parent = game.Players.LocalPlayer.PlayerGui
