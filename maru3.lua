@@ -70,17 +70,10 @@ spawn(function()
     local screenGuiuiui = Instance.new("ScreenGui")
     screenGuiuiui.Name = "ColorTransition"
     screenGuiuiui.Parent = game.Players.LocalPlayer.PlayerGui
-
-    -- Tính toán kích thước và vị trí của Frame
-    local left = 160
-    local top = 59
-    local width = 47
-    local height = 47
-
-    local positionuiui = UDim2.new(0, left, 0, top)
-    local sizeuiui = UDim2.new(0, width, 0, height)
-
-    -- Tạo một Frame trong ScreenGui
+                
+    local positionuiui = UDim2.new(0, 160, 0, 59)
+    local sizeuiui = UDim2.new(0, 47, 0, 47)
+                
     local frameuiui = Instance.new("Frame")
     frame.Position = positionuiui
     frame.Size = sizeuiui
@@ -88,23 +81,19 @@ spawn(function()
     frame.BackgroundColor3 = Color3.new(1, 1, 1)
     frame.Parent = screenGuiuiui
 
-    -- Tạo một Tween với TweenService
     local tweenServiceuiui = game:GetService("TweenService")
     local tweenInfouiui = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
 
-    -- Mảng các màu sắc chuyển động
     local colors = {
-        Color3.new(1, 0, 0), -- Đỏ
-        Color3.new(0, 1, 0), -- Xanh lá cây
-        Color3.new(0, 0, 1)  -- Xanh dương
+        Color3.new(1, 0, 0), 
+        Color3.new(0, 1, 0), 
+        Color3.new(0, 0, 1)  
     }
 
-    local colorIndex = 1 -- Chỉ số màu sắc hiện tại
-
-    -- Hàm để chạy tween animation
+    local colorIndex = 1 
     local function runTween()
         local currentColor = colors[colorIndex]
-        local nextColor = colors[colorIndex + 1] or colors[1] -- Trở lại màu đầu tiên sau khi đã chạy qua tất cả các màu
+        local nextColor = colors[colorIndex + 1] or colors[1]
 
         local tweenuiui = tweenServiceuiui:Create(frameuiui, tweenInfouiui, {BackgroundColor3 = nextColor})
         tweenuiui:Play()
@@ -113,14 +102,12 @@ spawn(function()
             if colorIndex > #colors then
                 colorIndex = 1
             end
-            runTween() -- Gọi lại hàm để tiếp tục chạy tween animation
+            runTween() 
         end)
     end
 
-    -- Chạy tween animation ban đầu
     runTween()
 end)
-
 
 getgenv().Key = "MARU-0WSG-5GN7N-8BLP-W228W-OPUT"
 getgenv().id = "523962819365044236"
