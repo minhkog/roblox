@@ -69,7 +69,7 @@ getgenv().Key = "MARU-0WSG-5GN7N-8BLP-W228W-OPUT"
 getgenv().id = "523962819365044236"
 getgenv().Script_Mode = "Kaitun_Script"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/minhkog/roblox/main/animation.lua"))()
 --getgenv().PVSetting = {
 --    key = 'XwkRa-FBWOK_YRwiS9b-', -- Secret Code
 --    DelayUpdate = 20, -- Delay Update (Seconds)
