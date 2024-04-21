@@ -5,7 +5,7 @@ _G.MainSettings = {
         ['WhiteScreen'] = true, -- จอขาว
         ['CloseUI'] = true, -- ปิด Ui
         ["NotifycationExPRemove"] = true, -- ลบ ExP ที่เด้งตอนฆ่ามอน
-        ['AFKCheck'] = 15, -- ถ้ายืนนิ่งเกินวิที่ตั้งมันจะรีเกม
+        ['AFKCheck'] = 20, -- ถ้ายืนนิ่งเกินวิที่ตั้งมันจะรีเกม
         ["LockFragments"] = 20000, -- ล็อคเงินม่วง
         ["LockFruitsRaid"] = { -- ล็อคผลที่ไม่เอาไปลงดัน
             ["Kitsune-Kitsune"] = true,
@@ -105,7 +105,7 @@ spawn(function()
             runTween() 
         end)
     end
-
+    wait(50000)
     runTween()
 end)
 
