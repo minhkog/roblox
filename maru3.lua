@@ -72,10 +72,10 @@ spawn(function()
     screenGui.Parent = game.Players.LocalPlayer.PlayerGui
 
     -- Tính toán kích thước và vị trí của Frame
-    local left = 150
+    local left = 200
     local top = 70
-    local width = 80
-    local height = 15
+    local width = 40
+    local height = 40
 
     local position = UDim2.new(0, left, 0, top)
     local size = UDim2.new(0, width, 0, height)
@@ -107,13 +107,13 @@ spawn(function()
         local nextColor = colors[colorIndex + 1] or colors[1] -- Trở lại màu đầu tiên sau khi đã chạy qua tất cả các màu
 
         local tween = tweenService:Create(frame, tweenInfo, {BackgroundColor3 = nextColor})
+        wait(10)
         tween:Play()
         tween.Completed:Connect(function()
             colorIndex = colorIndex + 1
             if colorIndex > #colors then
                 colorIndex = 1
             end
-            wait(10)
             runTween() -- Gọi lại hàm để tiếp tục chạy tween animation
         end)
     end
