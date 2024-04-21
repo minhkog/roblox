@@ -107,6 +107,7 @@ spawn(function()
         local nextColor = colors[colorIndex + 1] or colors[1] -- Trở lại màu đầu tiên sau khi đã chạy qua tất cả các màu
 
         local tween = tweenService:Create(frame, tweenInfo, {BackgroundColor3 = nextColor})
+        wait(2)
         tween:Play()
         tween.Completed:Connect(function()
             colorIndex = colorIndex + 1
