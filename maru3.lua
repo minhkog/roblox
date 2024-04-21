@@ -1,9 +1,8 @@
-_G.FixBugLDArce = true
 _G.MainSettings = {
         ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
-        ['FPSBOOST'] = false, -- ภาพกาก
+        ['FPSBOOST'] = true, -- ภาพกาก
         ["FPSLOCKAMOUNT"] = 30, -- จำนวน FPS
-        ['WhiteScreen'] = false, -- จอขาว
+        ['WhiteScreen'] = true, -- จอขาว
         ['CloseUI'] = true, -- ปิด Ui
         ["NotifycationExPRemove"] = true, -- ลบ ExP ที่เด้งตอนฆ่ามอน
         ['AFKCheck'] = 100, -- ถ้ายืนนิ่งเกินวิที่ตั้งมันจะรีเกม
@@ -68,9 +67,9 @@ _G.GunSettings = { -- ปืนที่จะทำ
 
 spawn(function()
     -- Tạo một ScreenGui
-    local screenGui = Instance.new("ScreenGui")
-    screenGui.Name = "ColorTransition"
-    screenGui.Parent = game.Players.LocalPlayer.PlayerGui
+    local screenGuiuiui = Instance.new("ScreenGui")
+    screenGuiuiui.Name = "ColorTransition"
+    screenGuiuiui.Parent = game.Players.LocalPlayer.PlayerGui
 
     -- Tính toán kích thước và vị trí của Frame
     local left = 160
@@ -78,20 +77,20 @@ spawn(function()
     local width = 47
     local height = 47
 
-    local position = UDim2.new(0, left, 0, top)
-    local size = UDim2.new(0, width, 0, height)
+    local positionuiui = UDim2.new(0, left, 0, top)
+    local sizeuiui = UDim2.new(0, width, 0, height)
 
     -- Tạo một Frame trong ScreenGui
-    local frame = Instance.new("Frame")
-    frame.Position = position
-    frame.Size = size
+    local frameuiui = Instance.new("Frame")
+    frame.Position = positionuiui
+    frame.Size = sizeuiui
     frame.AnchorPoint = Vector2.new(0, 0)
     frame.BackgroundColor3 = Color3.new(1, 1, 1)
-    frame.Parent = screenGui
+    frame.Parent = screenGuiuiui
 
     -- Tạo một Tween với TweenService
-    local tweenService = game:GetService("TweenService")
-    local tweenInfo = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+    local tweenServiceuiui = game:GetService("TweenService")
+    local tweenInfouiui = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
 
     -- Mảng các màu sắc chuyển động
     local colors = {
@@ -107,9 +106,9 @@ spawn(function()
         local currentColor = colors[colorIndex]
         local nextColor = colors[colorIndex + 1] or colors[1] -- Trở lại màu đầu tiên sau khi đã chạy qua tất cả các màu
 
-        local tween = tweenService:Create(frame, tweenInfo, {BackgroundColor3 = nextColor})
-        tween:Play()
-        tween.Completed:Connect(function()
+        local tweenuiui = tweenServiceuiui:Create(frameuiui, tweenInfouiui, {BackgroundColor3 = nextColor})
+        tweenuiui:Play()
+        tweenuiui.Completed:Connect(function()
             colorIndex = colorIndex + 1
             if colorIndex > #colors then
                 colorIndex = 1
