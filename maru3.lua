@@ -74,8 +74,8 @@ spawn(function()
     -- Tính toán kích thước và vị trí của Frame
     local left = 115
     local top = 71
-    local width = 417
-    local height = 35
+    local width = 80
+    local height = 15
 
     local position = UDim2.new(0, left, 0, top)
     local size = UDim2.new(0, width, 0, height)
