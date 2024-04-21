@@ -75,11 +75,11 @@ spawn(function()
     local sizeuiui = UDim2.new(0, 47, 0, 47)
                 
     local frameuiui = Instance.new("Frame")
-    frame.Position = positionuiui
-    frame.Size = sizeuiui
-    frame.AnchorPoint = Vector2.new(0, 0)
-    frame.BackgroundColor3 = Color3.new(1, 1, 1)
-    frame.Parent = screenGuiuiui
+    frameuiui.Position = positionuiui
+    frameuiui.Size = sizeuiui
+    frameuiui.AnchorPoint = Vector2.new(0, 0)
+    frameuiui.BackgroundColor3 = Color3.new(1, 1, 1)
+    frameuiui.Parent = screenGuiuiui
 
     local tweenServiceuiui = game:GetService("TweenService")
     local tweenInfouiui = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
